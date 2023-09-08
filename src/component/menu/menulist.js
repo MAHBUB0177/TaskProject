@@ -95,10 +95,10 @@ const Menulist = () => {
       name="control-hooks"
       style={{ maxWidth: 600 }}
     >
-      <Form.Item name="note" label="Product Price" >
+      <Form.Item name="name" label="Product Name" >
         <Input />
       </Form.Item>
-      <Form.Item name="note" label="Product price" >
+      <Form.Item name="price" label="Product price" >
         <Input />
       </Form.Item>
       <Form.Item name="Product Ctegory" label="Gender" >
