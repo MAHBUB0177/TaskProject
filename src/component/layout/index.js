@@ -109,9 +109,13 @@ const BaseLayout = () => {
             </Link>
           </div>
           : 
-          <div className="flex justify-center items-center mt-[20px] mx-7 mb-10 rounded-sm">
-              <Link to={"/home"}> <p className=" text-orange-400 font-bold text-medium">Tomatus</p>
+          <div className="flex justify-center items-center mt-[20px] mx-7 mb-10 rounded-sm" >
+              <Link to={"/home"}> 
+              <div className="flex justify-between gap-1">
+              <p className=" text-orange-400 font-bold text-xl">Tomatus</p>
               <AiOutlineMenu className="text-orange-400 h-[30px] w-[30px]"/>
+              </div>
+              
             </Link>
           </div> }
           </div>
