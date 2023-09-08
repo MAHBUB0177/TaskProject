@@ -25,23 +25,22 @@ const listItem=[
         name:'sabbir rahman khan',
         address:'target'
     },
-    // {
-    //     image:image1,
-    //     name:'sabbir rahman khan',
-    //     address:'target'
-    // }
+    {
+        image:image1,
+        name:'sabbir rahman khan',
+        address:'target'
+    }
 ]
 
 const Employeelist = () => {
   return (
-    <div>
+    <div >
+         
 
         {
             listItem?.map((item,index)=>
 <div class="flex items-center p-4 bg-white rounded h-[50px] mt-2 " key={index}>
-                    {/* <div class="flex flex-shrink-0 items-center justify-center  h-10 w-10 rounded-full">  */}
                     <img src={item?.image} alt='profile' className='h-10 w-10 rounded-full'/>       
-                    {/* </div> */}
                     <div class="flex-grow flex flex-col ml-4">
                         <div class="flex items-center justify-between">
                             <div>
@@ -55,8 +54,8 @@ const Employeelist = () => {
                 </div>
             )
         }
-                
-    </div>
+             </div>   
+
     
   )
 }

@@ -1,10 +1,5 @@
 import React from 'react'
 import { BiMoney, BiSupport } from "react-icons/bi";
-
-
-
-
-
 const listItem = [
     {
         image: <BiMoney />,
@@ -41,6 +36,7 @@ const ServiceList = () => {
   return (
 
     <div>
+        <h2 className='text-black font-medium text-lg'>Statics</h2>
 
 <div className='bg-slate-100 rounded-md p-10 border shadow-sm grid md:grid-cols-2 gap-1  text-center items-center'>
     {listItem?.map((item,index)=>
