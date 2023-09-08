@@ -64,6 +64,7 @@ const columns = [
         title: 'Quantity',
         dataIndex: 'Quantity',
         key: 'Quantity',
+        responsive: ['lg'], 
     },
     {
         title: 'Price',
@@ -79,7 +80,7 @@ const columns = [
                 {status ? 'Paid' : 'Unpaid'}
             </Tag>
         ),
-        responsive: ['sm'], // Specify responsive behavior for this column (small screens and above)
+        // responsive: ['sm'], // Specify responsive behavior for this column (small screens and above)
     },
 ];
 

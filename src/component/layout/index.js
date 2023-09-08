@@ -11,6 +11,10 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import LayoutHeader from "./header";
 import LayoutFooter from "./footer";
 
+import {AiOutlineMenu} from 'react-icons/ai'
+
+import {MdRestaurantMenu} from 'react-icons/md'
+
 
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -24,13 +28,15 @@ function getItem(label, key, icon, children) {
 }
 const items = [
   getItem("Menu", "/home", <DesktopOutlined />),
-  getItem("Menu Layout", "/list", <DesktopOutlined />),
+  getItem("Menu Layout", "sub1", <MdRestaurantMenu />, [
+    getItem("Menu Layput1", "/menulist"),
+  
+    
+  ]),
+  // getItem("Menu Layout", "/list", <DesktopOutlined />),
   getItem("Order List", "/dfghj", <BiMoney />),
   getItem("Chef Page", "/jfghj", <BiSupport />),
-  // getItem("Reports", "sub2", <AiFillFile />, [
-  //   getItem("Sales Report", "/dashboard/salesreport"),
-  //   getItem("Account Ledger", "/dashboard/ledger"),
-  // ]),
+  
   getItem("Customer Review", "/sdfghjk", <BiMoney />),
   getItem("Upload Menu", "/sdfgh", <HiUsers />),
   getItem("My Users", "/wertyjk", <UserOutlined />),
@@ -98,14 +104,14 @@ const BaseLayout = () => {
           }}>
             {collapsed ?  
             <div className="flex justify-center items-center mt-[25px] ">
-            <Link to={"/dashboard/search"}>
-            <AiFillHome className="text-orange-400 h-[30px] w-[30px]"/>
+            <Link to={"/home"}>
+            <AiOutlineMenu className="text-orange-400 h-[30px] w-[30px]"/>
             </Link>
           </div>
           : 
-          <div className="flex justify-center items-center mt-[20px] bg-white mx-7 mb-10 rounded-sm">
-              <Link to={"/dashboard/search"}>
-              <AiFillHome className="text-orange-400 h-[30px] w-[30px]"/>
+          <div className="flex justify-center items-center mt-[20px] mx-7 mb-10 rounded-sm">
+              <Link to={"/home"}> <p className=" text-orange-400 font-bold text-medium">Tomatus</p>
+              <AiOutlineMenu className="text-orange-400 h-[30px] w-[30px]"/>
             </Link>
           </div> }
           </div>

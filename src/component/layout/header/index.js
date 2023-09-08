@@ -15,16 +15,6 @@ const LayoutHeader = ({ collapsed }) => {
    // set user data
 
   // get user data
-
-  
-
-
-  
-
-
-  
-
-
   const items = [
     {
       label: "Profile",
@@ -77,7 +67,7 @@ const LayoutHeader = ({ collapsed }) => {
                     style={{ fontSize: "20px", color: "purple" }}
                   />
                 }
-                placeholder="PNR/TICKET NO/Booking ID"
+                placeholder="Search..."
                 
               />
             </Form.Item>
@@ -85,9 +75,7 @@ const LayoutHeader = ({ collapsed }) => {
         </div>
 
         <div className="flex justify-between gap-2">
-        <div className="hidden  md:block bg-orange-400 rounded-sm w-[200px] h-[40px] md:flex justify-center items-center mt-3">
-          <p className="text-left font-bold text-white text-xl">{!!agentInfo?.currencyName && agentInfo?.currencyName } {" "} {agentInfo?.currentBalance}</p>
-        </div>
+        
         <div className="mr-3 ">
         <Space wrap>
           <Dropdown.Button
@@ -97,7 +85,11 @@ const LayoutHeader = ({ collapsed }) => {
             arrow
             size="large"
            
-          >
+          > 
+          <p className="font-bold text-orange-500">
+          Tomatus
+
+          </p>
           </Dropdown.Button>
         </Space>
       </div>
